@@ -1,6 +1,6 @@
 Core Research
-A significant focus of our team is pursuing research that advances our understanding and improves our ability to solve new problems in the field of machine learning.
-Below are several themes from our research last year.
+A significant focus of our team is pursuing research that advances our understanding and improves our ability to solve new problems in
+the field of machine learning.Below are several themes from our research last year.
 
 AutoML
 The goal of automating machine learning is to develop techniques for computers to solve new machine learning problems automatically,
@@ -10,3 +10,13 @@ reinforcement learning and evolutionary algorithms, scaled this work to state-of
 and also showed how to learn new optimization algorithms and effective activation functions automatically. We are actively working with
 our Cloud AI team to bring this technology into the hands of Google customers, as well as continuing to push the research in many directions.
 
+Speech Understanding and Generation
+Another theme is on developing new techniques that improve the ability of our computing systems to understand and generate human speech, 
+including our collaboration with the speech team at Google to develop a number of improvements for an end-to-end approach to speech recognition, 
+which reduces the relative word error rate over Google’s production speech recognition system by 16%. One nice aspect of this work is that 
+it required many separate threads of research to come together (which you can find on Arxiv: 1, 2, 3, 4, 5, 6, 7, 8, 9).
+
+We also collaborated with our research colleagues on Google’s Machine Perception team to develop a new approach for performing
+text-to-speech generation (Tacotron 2) that dramatically improves the quality of the generated speech. 
+This model achieves a mean opinion score (MOS) of 4.53 compared to a MOS of 4.58 for professionally recorded speech like you might 
+find in an audiobook,and 4.34 for the previous best computer-generated speech system. You can listen for yourself.
