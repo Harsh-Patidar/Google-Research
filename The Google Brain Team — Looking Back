@@ -1,0 +1,12 @@
+Core Research
+A significant focus of our team is pursuing research that advances our understanding and improves our ability to solve new problems in the field of machine learning.
+Below are several themes from our research last year.
+
+AutoML
+The goal of automating machine learning is to develop techniques for computers to solve new machine learning problems automatically,
+without the need for human machine learning experts to intervene on every new problem. If we’re ever going to have truly intelligent systems, 
+this is a fundamental capability that we will need. We developed new approaches for designing neural network architectures using both 
+reinforcement learning and evolutionary algorithms, scaled this work to state-of-the-art results on ImageNet classification and detection, 
+and also showed how to learn new optimization algorithms and effective activation functions automatically. We are actively working with
+our Cloud AI team to bring this technology into the hands of Google customers, as well as continuing to push the research in many directions.
+
