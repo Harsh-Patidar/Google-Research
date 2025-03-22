@@ -20,3 +20,102 @@ We also collaborated with our research colleagues on Google’s Machine Percepti
 text-to-speech generation (Tacotron 2) that dramatically improves the quality of the generated speech. 
 This model achieves a mean opinion score (MOS) of 4.53 compared to a MOS of 4.58 for professionally recorded speech like you might 
 find in an audiobook,and 4.34 for the previous best computer-generated speech system. You can listen for yourself.
+
+
+Tacotron 2’s model architecture
+New Machine Learning Algorithms and Approaches
+We continued to develop novel machine learning algorithms and approaches, including work on capsules (which explicitly look for agreement in activated features as a way of evaluating many different noisy hypotheses when performing visual tasks), sparsely-gated mixtures of experts (which enable very large models that are still computational efficient), hypernetworks (which use the weights of one model to generate weights for another model), new kinds of multi-modal models (which perform multi-task learning across audio, visual, and textual inputs in the same model), attention-based mechanisms (as an alternative to convolutional and recurrent models), symbolic and non-symbolic learned optimization methods, a technique to back-propagate through discrete variables, and a few new reinforcement learning algorithmic improvements.
+
+Machine Learning for Computer Systems
+The use of machine learning to replace traditional heuristics in computer systems also greatly interests us. We have shown how to use reinforcement learning to make placement decisions for mapping computational graphs onto a set of computational devices that are better than human experts. With other colleagues in Google Research, we have shown in “The Case for Learned Index Structures” that neural networks can be both faster and much smaller than traditional data structures such as B-trees, hash tables, and Bloom filters. We believe that we are just scratching the surface in terms of the use of machine learning in core computer systems, as outlined in a NIPS workshop talk on Machine Learning for Systems and Systems for Machine Learning.
+
+Learned Models as Index Structures
+Privacy and Security
+Machine learning and its interactions with security and privacy continue to be major research foci for us. We showed that machine learning techniques can be applied in a way that provides differential privacy guarantees, in a paper that received one of the best paper awards at ICLR 2017. We also continued our investigation into the properties of adversarial examples, including demonstrating adversarial examples in the physical world, and how to harness adversarial examples at scale during the training process to make models more robust to adversarial examples.
+
+Understanding Machine Learning Systems
+While we have seen impressive results with deep learning, it is important to understand why it works, and when it won’t. In another one of the best paper awards of ICLR 2017, we showed that current machine learning theoretical frameworks fail to explain the impressive results of deep learning approaches. We also showed that the “flatness” of minima found by optimization methods is not as closely linked to good generalization as initially thought. In order to better understand how training proceeds in deep architectures, we published a series of papers analyzing random matrices, as they are the starting point of most training approaches. Another important avenue to understand deep learning is to better measure their performance. We showed the importance of good experimental design and statistical rigor in a recent study comparing many GAN approaches that found many popular enhancements to generative models do not actually improve performance. We hope this study will give an example for other researchers to follow in making robust experimental studies.
+
+We are developing methods that allow better interpretability of machine learning systems. And in March, in collaboration with OpenAI, DeepMind, YC Research and others, we announced the launch of Distill, a new online open science journal dedicated to supporting human understanding of machine learning. It has gained a reputation for clear exposition of machine learning concepts and for excellent interactive visualization tools in its articles. In its first year, Distill has published many illuminating articles aimed at understanding the inner working of various machine learning techniques, and we look forward to the many more sure to come in 2018.
+
+Feature Visualization
+
+How to Use t-SNE effectively
+Open Datasets for Machine Learning Research
+Open datasets like MNIST, CIFAR-10, ImageNet, SVHN, and WMT have pushed the field of machine learning forward tremendously.
+Our team and Google Research as a whole have been active in open-sourcing interesting new datasets for open machine learning 
+research over the past year or so, by providing access to more large labeled datasets including:
+YouTube-8M: >7 million YouTube videos annotated with 4,716 different classes
+YouTube-Bounding Boxes: 5 million bounding boxes from 210,000 YouTube videos
+Speech Commands Dataset: thousands of speakers saying short command words
+AudioSet: 2 million 10-second YouTube clips labeled with 527 different sound events
+Atomic Visual Actions (AVA): 210,000 action labels across 57,000 video clips
+Open Images: 9M creative-commons licensed images labeled with 6000 classes
+Open Images with Bounding Boxes: 1.2M bounding boxes for 600 classes
+
+Examples from the YouTube-Bounding Boxes dataset: Video segments sampled at 1 frame per second, with bounding boxes successfully identified 
+around the items of interest.
+TensorFlow and Open Source Software
+
+A map showing the broad distribution of TensorFlow users (source)
+Throughout our team’s history, we have built tools that help us to conduct machine learning research and deploy machine learning systems 
+in Google’s many products. In November 2015, we open-sourced our second-generation machine learning framework, TensorFlow, with the hope of 
+allowing the machine learning community as a whole to benefit from our investment in machine learning software tools. In February,
+we released TensorFlow 1.0, and in November, we released v1.4 with these significant additions: Eager execution for interactive
+imperative-style programming, XLA, an optimizing compiler for TensorFlow programs, and TensorFlow Lite, a lightweight solution
+for mobile and embedded devices. The pre-compiled TensorFlow binaries have now been downloaded more than 10 million times in over 180 countries,
+and the source code on GitHub now has more than 1,200 contributors.
+
+In February, we hosted the first ever TensorFlow Developer Summit, with over 450 people attending live in Mountain View and more than 6,500
+watching on live streams around the world, including at more than 85 local viewing events in 35 countries. All talks were recorded, with topics
+ranging from new features, techniques for using TensorFlow, or detailed looks under the hoods at low-level TensorFlow abstractions. 
+We’ll be hosting another TensorFlow Developer Summit on March 30, 2018 in the Bay Area. Sign up now to save the date and stay updated on the
+latest news.
+
+This rock-paper-scissors science experiment is a novel use of TensorFlow. We’ve been excited by the wide variety of uses of TensorFlow we saw in 2017,
+including automating cucumber sorting, finding sea cows in aerial imagery, sorting diced potatoes to make safer baby food, identifying skin
+cancer, helping to interpret bird call recordings in a New Zealand bird sanctuary, and identifying diseased plants in the most popular root crop 
+on Earth in Tanzania!
+In November, TensorFlow celebrated its second anniversary as an open-source project. It has been incredibly rewarding to see a vibrant community 
+of TensorFlow developers and users emerge. TensorFlow is the #1 machine learning platform on GitHub and one of the top five repositories on
+GitHub overall, used by many companies and organizations, big and small, with more than 24,500 distinct repositories on GitHub related to
+TensorFlow. Many research papers are now published with open-source TensorFlow implementations to accompany the research results, enabling 
+the community to more easily understand the exact methods used and to reproduce or extend the work.
+
+TensorFlow has also benefited from other Google Research teams open-sourcing related work, including TF-GAN, a lightweight library for
+generative adversarial models in TensorFlow, TensorFlow Lattice, a set of estimators for working with lattice models, as well as the 
+TensorFlow Object Detection API. The TensorFlow model repository continues to grow with an ever-widening set of models.
+
+In addition to TensorFlow, we released deeplearn.js, an open-source hardware-accelerated implementation of deep learning APIs right in 
+the browser (with no need to download or install anything). The deeplearn.js homepage has a number of great examples, including Teachable
+Machine, a computer vision model you train using your webcam, and Performance RNN, a real-time neural-network based piano composition and 
+performance demonstration. We’ll be working in 2018 to make it possible to deploy TensorFlow models directly into the deeplearn.js environment.
+
+TPUs
+
+Cloud TPUs deliver up to 180 teraflops of machine learning acceleration
+About five years ago, we recognized that deep learning would dramatically change the kinds of hardware we would need. Deep learning
+computations are very computationally intensive, but they have two special properties: they are largely composed of dense linear algebra
+operations (matrix multiples, vector operations, etc.), and they are very tolerant of reduced precision. We realized that we could take 
+advantage of these two properties to build specialized hardware that can run neural network computations very efficiently. We provided design
+input to Google’s Platforms team and they designed and produced our first generation Tensor Processing Unit (TPU): a single-chip ASIC designed 
+to accelerate inference for deep learning models (inference is the use of an already-trained neural network, and is distinct from training).
+This first-generation TPU has been deployed in our data centers for three years, and it has been used to power deep learning models on every
+Google Search query, for Google Translate, for understanding images in Google Photos, for the AlphaGo matches against Lee Sedol and Ke Jie, 
+and for many other research and product uses. In June, we published a paper at ISCA 2017, showing that this first-generation TPU was 15X - 30X 
+faster than its contemporary GPU or CPU counterparts, with performance/Watt about 30X - 80X better.
+
+Cloud TPU Pods deliver up to 11.5 petaflops of machine learning acceleration
+
+Experiments with ResNet-50 training on ImageNet show near-perfect speed-up as the number of TPU devices used increases.
+Inference is important, but accelerating the training process is an even more important problem - and also much harder. The faster researchers 
+can try a new idea, the more breakthroughs we can make. Our second-generation TPU, announced at Google I/O in May, is a whole system 
+(custom ASIC chips, board and interconnect) that is designed to accelerate both training and inference, and we showed a single
+device configuration as well as a multi-rack deep learning supercomputer configuration called a TPU Pod. We announced that these 
+second generation devices will be offered on the Google Cloud Platform as Cloud TPUs. We also unveiled the TensorFlow Research Cloud (TFRC), 
+a program to provide top ML researchers who are committed to sharing their work with the world with access to a cluster of 1,000 Cloud TPUs 
+for free. In December, we presented work showing that we can train a ResNet-50 ImageNet model to a high level of accuracy in 22 minutes on a TPU 
+Pod as compared to days or longer on a typical workstation. We think lowering research turnaround times in this fashion will dramatically 
+increase the productivity of machine learning teams here at Google and at all of the organizations that use Cloud TPUs. If you’re interested in
+Cloud TPUs, TPU Pods, or the TensorFlow Research Cloud,
+you can sign up to learn more at g.co/tpusignup. We’re excited to enable many more engineers and researchers to use TPUs in 2018!
