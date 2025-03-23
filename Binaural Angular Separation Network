@@ -1,0 +1,7 @@
+We propose a neural network model that can separate target speech sources from interfering sources at different angular regions using two microphones. 
+The model is trained with simulated room impulse responses (RIRs) using omni-directional microphones without needing to collect real RIRs. 
+By relying on specific angular regions and multiple room simulations, the model utilizes consistent time difference of arrival (TDOA) cues, 
+or what we call delay contrast, to separate target and interference sources while remaining robust in various reverberation environments.
+We demonstrate the model is not only generalizable to a commercially available device with a slightly different microphone geometry,
+but also outperforms our previous work which uses one additional microphone on the same device. 
+The model runs in real-time on-device and is suitable for low-latency streaming applications such as telephony and video conferencing.
