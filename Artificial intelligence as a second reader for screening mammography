@@ -1,0 +1,18 @@
+Background
+Artificial intelligence (AI) has shown promise in mammography interpretation, 
+and its use as a second reader in breast cancer screening may reduce the burden on health care systems.
+
+Purpose
+To evaluate the performance differences between routine double read and an AI as a second reader workflow (AISR), where the second reader is replaced with AI.
+
+Materials and Methods
+A cohort of patients undergoing routine breast cancer screening at a single center with mammography was retrospectively collected between 2005 and 2021. 
+A model developed on US and UK data was fine-tuned on Japanese data. We subsequently performed a reader study with 10 qualified readers with 
+varied experience (5 reader pairs), comparing routine double read to an AISR workflow.
+
+Results
+A “test set” of 4,059 women (mean age, 56 ± 14 years; 157 positive, 3,902 negative) was collected, with 278 (mean age 55 ± 13 years; 90 positive, 188 negative) 
+evaluated for the reader study. We demonstrate an area under the curve =.84 (95% confidence interval [CI], 0.805-0.881) on the test set, with no significant difference
+to decisions made in clinical practice (P = .32). Compared with routine double reading, in the AISR arm, sensitivity improved by 7.6% (95% CI, 3.80-11.4; P = .00004) 
+and specificity decreased 3.4% (1.42-5.43; P = .0016), with 71% (212/298) of scans no longer requiring input from a second reader.
+Variation in recall decision between reader pairs improved from a Cohen kappa of κ = .65 (96% CI, 0.61-0.68) to κ = .74 (96% CI, 0.71-0.77) in the AISR arm.
