@@ -1,0 +1,5 @@
+We consider the non-stochastic Multi-Armed Bandit problem in a setting where there is a fixed and known metric on the action space that
+determines a cost for switching between any pair of actions. The loss of the online learner has two components: 
+the first is the usual loss of the selected actions, and the second is an additional loss due to switching between actions. 
+Our main contribution gives a tight characterization of the expected minimax regret in this setting,
+in terms of a complexity measure~$C$ of the underlying metric which depends on its covering numbers. 
